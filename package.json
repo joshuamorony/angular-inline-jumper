@@ -1,0 +1,84 @@
+{
+  "name": "angular-inline-jumper",
+  "displayName": "Angular Inline Jumper",
+  "description": "Quickly jump between template, styles, and class in Angular inline files",
+  "version": "0.0.1",
+  "publisher": "joshuamorony",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:angular-inline-jumper.jumpToTemplate",
+    "onCommand:angular-inline-jumper.jumpToStyles",
+    "onCommand:angular-inline-jumper.jumpToClass"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "angular-inline-jumper.jumpToTemplate",
+        "title": "Jump to inline template"
+      },
+      {
+        "command": "angular-inline-jumper.jumpToStyles",
+        "title": "Jump to inline styles"
+      },
+      {
+        "command": "angular-inline-jumper.jumpToClass",
+        "title": "Jump to class"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "angular-inline-jumper.jumpToTemplate",
+        "key": "shift+cmd+t",
+        "mac": "shift+cmd+t",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "angular-inline-jumper.jumpToStyles",
+        "key": "shift+cmd+s",
+        "mac": "shift+cmd+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "angular-inline-jumper.jumpToClass",
+        "key": "shift+cmd+c",
+        "mac": "shift+cmd+c",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.68.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.2",
+    "@vscode/test-electron": "^2.1.3"
+  }
+}
