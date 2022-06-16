@@ -6,12 +6,12 @@
   "publisher": "joshuamorony",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/joshuamorony/angular-inline-jumper.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/joshuamorony/angular-inline-jumper/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/joshuamorony/angular-inline-jumper/blob/main/README.md",
   "engines": {
     "vscode": "^1.68.0"
   },
