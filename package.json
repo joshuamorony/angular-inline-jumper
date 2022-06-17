@@ -1,8 +1,9 @@
 {
   "name": "angular-inline-jumper",
   "displayName": "Angular Inline Jumper",
-  "description": "Quickly jump between template, styles, and class in Angular inline files",
-  "version": "0.0.1",
+  "description": "Quickly jump between your class, template, and styles in your Angular single file components!",
+  "icon": "images/icon.png",
+  "version": "0.0.2",
   "publisher": "joshuamorony",
   "repository": {
     "type": "git",
@@ -42,20 +43,20 @@
     "keybindings": [
       {
         "command": "angular-inline-jumper.jumpToTemplate",
-        "key": "shift+cmd+t",
-        "mac": "shift+cmd+t",
+        "key": "alt+t",
+        "mac": "alt+t",
         "when": "editorTextFocus"
       },
       {
         "command": "angular-inline-jumper.jumpToStyles",
-        "key": "shift+cmd+s",
-        "mac": "shift+cmd+s",
+        "key": "alt+s",
+        "mac": "alt+s",
         "when": "editorTextFocus"
       },
       {
         "command": "angular-inline-jumper.jumpToClass",
-        "key": "shift+cmd+c",
-        "mac": "shift+cmd+c",
+        "key": "alt+c",
+        "mac": "alt+c",
         "when": "editorTextFocus"
       }
     ]
