@@ -2,6 +2,8 @@
 
 Quickly jump between your class, template, and styles in your Angular single file components!
 
+![Example](images/example.gif)
+
 ## Default bindings:
 
 - Template: (alt/option)+T
