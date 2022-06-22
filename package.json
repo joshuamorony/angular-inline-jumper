@@ -3,12 +3,20 @@
   "displayName": "Angular Inline Jumper",
   "description": "Quickly jump between your class, template, and styles in your Angular single file components!",
   "icon": "images/icon.png",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "joshuamorony",
   "repository": {
     "type": "git",
     "url": "https://github.com/joshuamorony/angular-inline-jumper.git"
   },
+  "keywords": [
+    "Angular",
+    "Jumper",
+    "Single File Components",
+    "SFC",
+    "Inline components",
+    "Inline"
+  ],
   "bugs": {
     "url": "https://github.com/joshuamorony/angular-inline-jumper/issues"
   },

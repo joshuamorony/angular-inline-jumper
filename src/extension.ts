@@ -18,6 +18,11 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const lineNumber = getLineNumberFor(editor.document, "template");
+
+      // Go to end of document so more of section will be visible
+      goToLine(editor.document.lineCount - 1);
+
+      // Go to the actual line
       goToLine(lineNumber);
     }
   );
@@ -29,6 +34,11 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     const lineNumber = getLineNumberFor(editor.document, "styles");
+
+    // Go to end of document so more of section will be visible
+    goToLine(editor.document.lineCount - 1);
+
+    // Go to the actual line
     goToLine(lineNumber);
   });
 
@@ -39,6 +49,11 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     const lineNumber = getLineNumberFor(editor.document, "class");
+
+    // Go to end of document so more of section will be visible
+    goToLine(editor.document.lineCount - 1);
+
+    // Go to the actual line
     goToLine(lineNumber);
   });
 
