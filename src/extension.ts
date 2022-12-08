@@ -90,7 +90,7 @@ function getLineNumberFor(
       regex = /styles:/;
       break;
     case "class":
-      regex = /export class/;
+      regex = /export\s+(default\s+)?class/;
       break;
   }
 
